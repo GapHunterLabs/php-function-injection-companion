@@ -1,0 +1,9 @@
+<html>
+<body>
+Reports <code>call_user_func(</code> or <code>call_user_func_array(</code> whose function-name argument uses a
+superglobal directly (<code>$_GET</code>, <code>$_POST</code>, <code>$_REQUEST</code>, <code>$_COOKIE</code>).
+<!-- tooltip end -->
+<p>Whoever controls the callable name can invoke any reachable function, <code>system</code> included, which leads to
+remote code execution. Map the input to a fixed list of allowed callables instead.</p>
+</body>
+</html>
